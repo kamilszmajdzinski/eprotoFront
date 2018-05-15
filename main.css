@@ -48,6 +48,16 @@ html, body {
     margin: auto 1em;
 }
 
+.box3 a{
+    color: white;
+    text-decoration: none;
+}
+
+.box3 a:hover{
+    color: #EB7F00;
+    text-decoration: underline;
+}
+
 .container{
     display: flex;
     width: 100%;
@@ -107,6 +117,7 @@ html, body {
     display: block;
     width: 90%;
     margin: 2em auto;
+    margin-bottom: 1em;
 }
 
 
@@ -127,17 +138,19 @@ table {
     height: 100%;
 }
 
-table .button {
-    border: none;
-    
-    padding: 6px ;
-    width: 31%;
-    height: 100%;
+.button{
     background-color: #003459;
     color: white; 
+    border: none;
+    padding: 6px ;
 }
 
-table .button:hover {
+table .button {
+    width: 33.3%;
+    height: 100%;
+}
+
+.button:hover {
     background-color: #EB7F00;
 }
 
@@ -155,7 +168,19 @@ tr:nth-child(even){background-color: #E5F2FF;}
 
 tr:hover {background-color: #A8D5FF;}
 
+.indexInput {
+    display: none;  
+    height:  100%; 
+}
 
+#indexSearchButt{
+    display: none;
+}
+
+.newStudent{
+    margin-top: 1em;
+    padding: 10px;
+}
 
 @media only screen and (max-width: 800px) {
    .container{

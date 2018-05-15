@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Muli:600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
 </head>
 <body>
@@ -15,7 +17,7 @@
     <div class="main-container">
 
         <header class="box box1">
-            <p>Student Grade Manager</p>
+            <p> <i class="fas fa-graduation-cap"></i> Student Grade Manager</p>
         </header>
 
         <div class="box box2">
@@ -50,8 +52,8 @@
                             <h2 class="contentHeader">Lista studentów</h2>
                             
                             <table class="student-table">
-                                <tr>
-                                    <th>Index</th>
+                                <tr id="tableHeader">
+                                    <th id="indexHeader"> <span class="index"> Index <i class="fas fa-search" id="indexSearch"></i> </span><input type="number" class="indexInput"> <input type="button" value="Search" class="button" id="indexSearchButt"> </th>
                                     <th>Imię i nazwisko</th>
                                     <th>Data urodzenia</th>
                                     <th>Akcje</th>
@@ -61,10 +63,7 @@
                                     <td>Kamil Szmajdziński</td>
                                     <td>21.11.1995</td>
                                     <td class="buttonCell">
-                                        
-                                        <input class='button' type='button' value='Edit'/>
-                                        <input class='button' type='button' value='Delete'/>
-                                        <input class='button' type='button' value='Details'/>
+                                        <input class='button' type='button' value='Edit'/><input class='button' type='button' value='Delete'/><input class='button' type='button' value='Details'/>
                                     </td>
                                 </tr>
                                 <tr>
@@ -72,9 +71,7 @@
                                     <td>Karol Kokosza</td>
                                     <td>12.11.1995</td>
                                     <td class="buttonCell">
-                                        <input class='button' type='button' value='Edit'/>
-                                        <input class='button' type='button' value='Delete'/>
-                                        <input class='button' type='button' value='Details'/>
+                                        <input class='button' type='button' value='Edit'/><input class='button' type='button' value='Delete'/><input class='button' type='button' value='Details'/>
                                     </td>
                                 </tr>
                                 <tr>
@@ -83,26 +80,27 @@
                                     <td>12.01.1995</td>
                                     <td class="buttonCell">
                                         <div class="buttonDiv">
-                                                <input class='button' type='button' value='Edit'/>
-                                                <input class='button' type='button' value='Delete'/>
-                                                <input class='button' type='button' value='Details'/>
+                                            <input class='button' type='button' value='Edit'/><input class='button' type='button' value='Delete'/><input class='button' type='button' value='Details'/>
                                         </div>
-                                        
                                     </td>
                                 </tr>
                             </table>
-                        
+                            <input class='button newStudent' id = "newStudent" type='button' value='Add new student'/> 
                         </div>
-
+                       
                 </div>
+
+                
+
             </div>
         </div>
 
         <footer class="box box3">
-            <p>Student Grade Manager - Kamil Szmajdziński</p>
+            <p>Student Grade Manager - Kamil Szmajdziński  <a href="http://www2.cs.put.poznan.pl/">  Instytyt Informatyki PP</a>  </p>
         </footer>
 
     </div>
-
+    
+    <script src="main.js"></script>
 </body>
 </html>
