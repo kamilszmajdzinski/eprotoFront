@@ -1,0 +1,167 @@
+html, body {
+    height:100%;
+    margin:0;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.box1 {
+    background-color: #003459;
+    flex-grow: 2;
+    min-height: 50px;
+    max-height: 70px;
+    display: flex;
+    border-bottom: 2px solid #00171F;
+}
+
+.box1 p {
+    margin: auto auto;
+    color: aliceblue;
+    font-size: 1.5em;
+    font-family: 'Muli', sans-serif;
+}
+
+.box2{
+    
+    flex-grow: 9;
+    position: relative;
+}
+
+.box3{
+    background-color: #00171F;
+    flex-grow: 1;
+    min-height: 20px;
+    max-height: 50px;
+    display: flex;
+}
+
+.box3 p {
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 0.7em;
+    margin: auto 1em;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.nav{
+    flex-grow: 1;
+    background-color: #007EA7;
+    border-right: 1px solid #003459;
+}
+
+.nav li {
+    list-style: none;
+    padding: 1em;
+    background-color: #007EA7;
+    text-transform: capitalize;
+    color: #F3FFE2;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav li:hover{
+    background-color: #EB7F00;
+}
+
+.content{
+    flex-grow: 5;
+    background-color: white;
+}
+
+.course-list{
+    display: none;
+    
+    
+}
+
+.course-list:target{
+    display: block;
+    width: 90%;
+    margin: 2em auto;
+}
+
+.student-list{
+    display: none;
+    
+    
+}
+
+.student-list:target{
+    display: block;
+    width: 90%;
+    margin: 2em auto;
+}
+
+
+
+.contentHeader {
+    font-family: 'Muli', sans-serif;
+}
+
+table {
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    border: 3px solid #003459;
+    border-collapse: collapse;
+}
+
+.buttonDiv {
+    width: 100%;
+    height: 100%;
+}
+
+table .button {
+    border: none;
+    
+    padding: 6px ;
+    width: 31%;
+    height: 100%;
+    background-color: #003459;
+    color: white; 
+}
+
+table .button:hover {
+    background-color: #EB7F00;
+}
+
+td, th {
+    border: 1px solid #007EA7;
+    padding: 4px;  
+}
+
+.buttonCell {
+    margin: 0;
+    padding: 0;
+}
+
+tr:nth-child(even){background-color: #E5F2FF;}
+
+tr:hover {background-color: #A8D5FF;}
+
+
+
+@media only screen and (max-width: 800px) {
+   .container{
+       flex-direction: column;
+   }
+  }
+
+
+

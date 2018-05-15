@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Muli:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    
+    <div class="main-container">
+
+        <header class="box box1">
+            <p>Student Grade Manager</p>
+        </header>
+
+        <div class="box box2">
+            <div class="container">
+
+                <div class="nav">
+                        <li><a href = "#student-list" >List of students</a></li>
+                        <li> <a href = "#course-list">Course List</a></li>
+                </div>
+
+                <div class="content">
+                   <div class="course-list" id="course-list">
+                        <h2 class="contentHeader">Lista przedmiotów</h3>
+                        <table class="student-table">
+                            <tr>
+                                <th>Nazwa przedmiotu</th>
+                                <th>Prowadzący</th>
+                            </tr>
+                            <tr>
+                                <td>Programowanie</td>
+                                <td>Pan Kleks</td>
+                            </tr>
+                            <tr>
+                                <td>Integracja</td>
+                                <td>Pan Karol</td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <div class="student-list" id="student-list">
+                            <h2 class="contentHeader">Lista studentów</h2>
+                            
+                            <table class="student-table">
+                                <tr>
+                                    <th>Index</th>
+                                    <th>Imię i nazwisko</th>
+                                    <th>Data urodzenia</th>
+                                    <th>Akcje</th>
+                                </tr>
+                                <tr>
+                                    <td>122376</td>
+                                    <td>Kamil Szmajdziński</td>
+                                    <td>21.11.1995</td>
+                                    <td class="buttonCell">
+                                        
+                                        <input class='button' type='button' value='Edit'/>
+                                        <input class='button' type='button' value='Delete'/>
+                                        <input class='button' type='button' value='Details'/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>122374</td>
+                                    <td>Karol Kokosza</td>
+                                    <td>12.11.1995</td>
+                                    <td class="buttonCell">
+                                        <input class='button' type='button' value='Edit'/>
+                                        <input class='button' type='button' value='Delete'/>
+                                        <input class='button' type='button' value='Details'/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>122322</td>
+                                    <td>Dawid Ciok</td>
+                                    <td>12.01.1995</td>
+                                    <td class="buttonCell">
+                                        <div class="buttonDiv">
+                                                <input class='button' type='button' value='Edit'/>
+                                                <input class='button' type='button' value='Delete'/>
+                                                <input class='button' type='button' value='Details'/>
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="box box3">
+            <p>Student Grade Manager - Kamil Szmajdziński</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
