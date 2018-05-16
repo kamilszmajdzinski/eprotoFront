@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="print.css" rel="stylesheet" media="print" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
 </head>
@@ -56,14 +57,14 @@
                                     <th id="indexHeader"> <span class="index"> Index <i class="fas fa-search" id="indexSearch"></i> </span><input type="number" class="indexInput"> <input type="button" value="Search" class="button" id="indexSearchButt"> </th>
                                     <th>Imię i nazwisko</th>
                                     <th>Data urodzenia</th>
-                                    <th>Akcje</th>
+                                    <th id="actionColumn">Akcje</th>
                                 </tr>
                                 <tr>
                                     <td>122376</td>
                                     <td>Kamil Szmajdziński</td>
                                     <td>21.11.1995</td>
                                     <td class="buttonCell">
-                                        <input class='button' type='button' value='Edit'/><input class='button' type='button' value='Delete'/><input class='button' type='button' value='Details'/>
+                                        <input class='button' type='button' value='Edit'/><input class='button' type='button' value='Delete'/><input class='button' type='button' onclick="location.href = '#gradesList'" value='Details'/>
                                     </td>
                                 </tr>
                                 <tr>
@@ -84,13 +85,41 @@
                                         </div>
                                     </td>
                                 </tr>
-
-                                
-
                             </table>
                         </form>
                             <input class='button newStudent' id = "newStudent" type='button' value='Add new student'/> 
                         </div>
+
+                     <div class="gradesList" id="gradesList">
+                         <form action="">
+                            <h2 class="contentHeader">List of grades (Kamil Szmajdziński)</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Grade</th>
+                                        <th>Course</th>
+                                        <th>Lecturer</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5.0</td>
+                                        <td>Programowanie</td>
+                                        <td>Pan Kleks</td>
+                                        <td>21.11.2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5.0</td>
+                                        <td>Integracja</td>
+                                        <td>Pan Karol</td>
+                                        <td>21.11.2018</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                         </form>
+                     </div>   
                        
                 </div>
 

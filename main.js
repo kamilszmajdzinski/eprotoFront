@@ -29,18 +29,23 @@ $('#indexSearchButt').click(function() {
 
 $("#student-list").on('click' ,'#newStudent' , function(){
 
-    var formRow = "<tr><td>Index</td><td><input type='text' class='newStudentInput' name='newStudentName' id='newStudentName' placeholder ='Student name' required></td><td><input type='date' name='newStudentBirthday' class='newStudentInput' id='newStudentBirthday' required></td><td><input type='submit' value='Add' class='button' id='newStudentConfirm'></td></tr>"
+    var formRow = "<tr id = 'newStudentFormRow'><td>Index</td><td><input type='text' class='newStudentInput' name='newStudentName' id='newStudentName' placeholder ='Student name' required></td><td><input type='date' name='newStudentBirthday' class='newStudentInput' id='newStudentBirthday' required></td><td><input type='submit' value='Add' class='button' id='newStudentConfirm'><input type='button' value='Cancel' class='button' id='newStudentCancel'></td></tr>"
 
     $(".student-table").append(formRow)
     $("#newStudent").css("display", "none");
 })
 
 $("#student-list").on('click' ,'#newStudentConfirm' , function(event){
-    event.preventDefault();
+    //event.preventDefault();
     $.each($('.newStudentInput'), function(){
         var value = $(this).val();
         console.log(value);
-    })
-    
+    })  
+})
+
+$("#student-list").on('click' ,'#newStudentCancel' , function(){
+    $("#newStudentFormRow").remove();
+    $("#newStudent").css("display", "block");
+    $("#newStudentFormRow").remove();
     
 })
