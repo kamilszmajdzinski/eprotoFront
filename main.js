@@ -27,9 +27,20 @@ $('#indexSearchButt').click(function() {
 })
 
 
-$("#newStudent").click(function(){
+$("#student-list").on('click' ,'#newStudent' , function(){
 
-    var newRow = "<tr><td>122376</td><td>Kamil Szmajdziński</td><td>21.11.1995</td><td class='buttonCell'><input class='button' type='button' value='Edit'/><input class='button' type='button' value='Delete'/><input class='button' type='button' value='Details'/></td></tr>"
+    var formRow = "<tr><td>Index</td><td><input type='text' class='newStudentInput' name='newStudentName' id='newStudentName' placeholder ='Student name' required></td><td><input type='date' name='newStudentBirthday' class='newStudentInput' id='newStudentBirthday' required></td><td><input type='submit' value='Add' class='button' id='newStudentConfirm'></td></tr>"
 
-    $(".student-table").append(newRow)
+    $(".student-table").append(formRow)
+    $("#newStudent").css("display", "none");
+})
+
+$("#student-list").on('click' ,'#newStudentConfirm' , function(event){
+    event.preventDefault();
+    $.each($('.newStudentInput'), function(){
+        var value = $(this).val();
+        console.log(value);
+    })
+    
+    
 })

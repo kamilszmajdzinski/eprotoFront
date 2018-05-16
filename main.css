@@ -39,6 +39,8 @@ html, body {
     min-height: 20px;
     max-height: 50px;
     display: flex;
+z-index: 999;
+
 }
 
 .box3 p {

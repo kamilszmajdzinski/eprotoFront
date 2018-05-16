@@ -30,7 +30,7 @@
 
                 <div class="content">
                    <div class="course-list" id="course-list">
-                        <h2 class="contentHeader">Lista przedmiotów</h3>
+                        <h2 class="contentHeader">List of courses</h3>
                         <table class="student-table">
                             <tr>
                                 <th>Nazwa przedmiotu</th>
@@ -49,9 +49,9 @@
 
 
                     <div class="student-list" id="student-list">
-                            <h2 class="contentHeader">Lista studentów</h2>
-                            
-                            <table class="student-table">
+                            <h2 class="contentHeader">List of students</h2>
+                            <form action="">
+                            <table class="student-table" id="student-table">
                                 <tr id="tableHeader">
                                     <th id="indexHeader"> <span class="index"> Index <i class="fas fa-search" id="indexSearch"></i> </span><input type="number" class="indexInput"> <input type="button" value="Search" class="button" id="indexSearchButt"> </th>
                                     <th>Imię i nazwisko</th>
@@ -84,7 +84,11 @@
                                         </div>
                                     </td>
                                 </tr>
+
+                                
+
                             </table>
+                        </form>
                             <input class='button newStudent' id = "newStudent" type='button' value='Add new student'/> 
                         </div>
                        
