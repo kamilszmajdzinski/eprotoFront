@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,14 +24,14 @@
         <div class="box box2">
             <div class="container">
 
-                <div class="nav">
-                        <li><a href = "#student-list" >List of students</a></li>
-                        <li> <a href = "#course-list">Course List</a></li>
-                </div>
+                <nav class="nav">
+                        <ul><li><a href = "#student-list" >List of students</a></li></ul>
+                        <ul><li> <a href = "#course-list">Course List</a></li></ul>
+                </nav>
 
                 <div class="content">
-                   <div class="course-list" id="course-list">
-                        <h2 class="contentHeader">List of courses</h3>
+                   <article class="course-list" id="course-list">
+                        <h2 class="contentHeader">List of courses</h2>
                         <table class="student-table">
                             <tr>
                                 <th>Nazwa przedmiotu</th>
@@ -46,12 +46,12 @@
                                 <td>Pan Karol</td>
                             </tr>
                         </table>
-                    </div>
+                   </article>
 
 
-                    <div class="student-list" id="student-list">
+                    <article class="student-list" id="student-list">
                             <h2 class="contentHeader">List of students</h2>
-                            <form action="">
+                            <form >
                             <table class="student-table" id="student-table">
                                 <tr id="tableHeader">
                                     <th id="indexHeader"> <span class="index"> Index <i class="fas fa-search" id="indexSearch"></i> </span><input type="number" class="indexInput"> <input type="button" value="Search" class="button" id="indexSearchButt"> </th>
@@ -88,12 +88,12 @@
                             </table>
                         </form>
                             <input class='button newStudent' id = "newStudent" type='button' value='Add new student'/> 
-                        </div>
+                    </article>
 
-                     <div class="gradesList" id="gradesList">
-                         <form action="">
+                     <article class="gradesList" id="gradesList">
+                         <form >
                             <h2 class="contentHeader">List of grades (Kamil Szmajdziński)</h2>
-                            <table>
+                            <table class="gradesTable" id="gradesTable">
                                 <thead>
                                     <tr>
                                         <th>Grade</th>
@@ -117,10 +117,10 @@
                                     </tr>
                                 </tbody>
                             </table>
-
+                            <input class='button newGrade' id = "newGrade" type='button' value='Add new grade'/>
                          </form>
-                     </div>   
-                       
+                        </article>   
+                        
                 </div>
 
                 

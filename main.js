@@ -49,3 +49,12 @@ $("#student-list").on('click' ,'#newStudentCancel' , function(){
     $("#newStudentFormRow").remove();
     
 })
+
+$("#gradesList").on('click' ,'#newGrade' , function(){
+
+    var formRow = "<tr id = 'newStudentFormRow'><td><input type='number' step='0.5' min='3' max='5' required></td><td><input type='text' class='newStudentInput' name='newStudentName' id='newStudentName' placeholder ='Student name' required></td><td><input type='date' name='newStudentBirthday' class='newStudentInput' id='newStudentBirthday' required></td><td><input type='submit' value='Add' class='button' id='newStudentConfirm'><input type='button' value='Cancel' class='button' id='newStudentCancel'></td></tr>"
+    console.log('kliknieto');
+    
+    $(".gradesTable").append(formRow)
+    $("#newGrade").css("display", "none");
+})
